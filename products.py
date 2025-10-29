@@ -20,5 +20,6 @@ for p in products:
 	print(p[0], 'is', p[1])
 
 with open('products.csv', 'w') as f:
+	f.write('Item,Price\n')
 	for p in products:
 		f.write(p[0] + ',' + p[1] + '\n')
